@@ -4,10 +4,17 @@ var noseY = 0
 var marioX = 325
 var marioY = 325
 
+var mariodie , world_start , kick ,  jump , gameover , coin2
+
 function preload() {
 	world_start = loadSound("world_start.wav");
 	setSprites();
 	MarioAnimation();
+	mariodie = loadSound ("mariodie.wav")
+	kick = loadSound ("kick.wav")
+	jump = loadSound("jump.wav")
+	gameover = loadSound("gameover.wav")
+	coin2 = loadSound("coin.wav")
 }
 
 function setup() {
